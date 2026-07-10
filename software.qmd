@@ -60,6 +60,34 @@ This section primarily highlights my contributions to ***published*** projects t
 ## Ongoing Projects
 The following repositories illustrate some of my more recent personal coding projects:
 
+### agentbuilder
+<img src='www/assets/agentbuilder_logo.png' align="right" width="180" style="float:right; width:180px;"/>
+
+- [agentbuilder](https://github.com/MLVisions/agentBuilder): `agentbuilder` is an R package for building declarative AI agents that integrate seamlessly with R workflows. Define agents in YAML, compose them with tools, and deploy them anywhere R runs. Built on [ellmer](https://github.com/tidyverse/ellmer/) for LLM abstraction and [ragnar](https://github.com/tidyverse/ragnar) for retrieval.
+
+**Key Features:**
+
+- **Provider Flexibility** — Seamlessly switch between OpenAI, Anthropic, Ollama (local models), or any LLM provider without changing agent logic.
+- **Tool Integration** — Wrap any R function as a tool, create RAG tools for semantic document search, or wrap entire agents as tools for multi-agent orchestration.
+- **MCP Server Support** — Integrate Model Context Protocol servers as tool sources, enabling agents to call external services through a standardized interface.
+- **Structured Output** — Define JSON schemas so agents return typed, structured responses ready for downstream data pipelines.
+- **Conversation Telemetry** — Inspect token usage, cost, tool calls, and full conversation transcripts via `get_thread()`.
+
+### py_agentbuilder
+
+- [py_agentbuilder](https://github.com/MLVisions/agentBuilder_py): `py_agentbuilder` is a Python package for building provider-agnostic AI agents. Compose local functions, RAG, and MCP tools, persist configs in YAML, and inspect runtime telemetry — all from one API.
+
+**Key Features:**
+
+- **Provider Flexibility** — Switch between OpenAI, Anthropic, Ollama, or any LiteLLM-supported provider with a single parameter change.
+- **Tool Integration** — Wrap any Python function as a tool, build RAG tools backed by DuckDB + LiteLLM embeddings, or use agents-as-tools for multi-agent delegation.
+- **Agent Flows** — Define sequential or parallel pathways of agent calls (flows), and add entire flows as a tool to an existing agent for complex orchestration patterns.
+- **MCP Server Support** — Wrap FastMCP servers as tool sources; at build time the framework auto-discovers server instructions and tool schemas to inject into the system prompt.
+- **Structured Output** — Provide JSON schemas for typed agent responses suitable for classification, extraction, and data pipelines.
+- **Cancellation & Timeouts** — Cooperatively cancel long-running calls via `CancelToken`, or set hard `request_timeout` bounds.
+- **Thread Persistence** — Save, reload, and resume conversations across sessions; seed agents with prior message histories from external storage.
+- **Interactive Telemetry** — View cumulative cost/tokens over time, per-turn tool usage, and Mermaid tool-call flowcharts via `plot_thread()`.
+
 ### pythonR
 <img src='www/assets/logo-pythonR.png' align="right" width="180" style="float:right; width:180px;"/>
 

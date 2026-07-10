@@ -1,5 +1,45 @@
 [
   {
+    "objectID": "shiny_apps/homebrewing/about.html",
+    "href": "shiny_apps/homebrewing/about.html",
+    "title": "Kyle Barrett",
+    "section": "",
+    "text": "Background\nHere’s an example of one of the apps I made for personal use back in the day (Homebrewing!). I used to use it to help me keep track of all the ingredients I liked, determine proper measurements, and estimate the pricing. Never actually sold any, but was glad I learned my profit margins wouldn’t be too great.\n\nFeel free to check it out on GitHub!\n\nNote: It looks like some formatting features aren’t working too great on shinyapps.io, and some dropdowns don’t work correctly in the embedded version here. Choosing not to fix it at the moment, though the full screen version should operate a bit more smoothly."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software Development",
+    "section": "",
+    "text": "This section primarily highlights my contributions to published projects that specifically relate to my software development experiences. Most client projects have been confidential, and not all of the software I developed is publicly available (especially R shiny apps).\n\n\n\nI have contributed to many of the packages found at github.com/metrumresearchgroup, relating to NONMEM model management & submission, data visualization, data summarization & formatting (latex, HTML, RTF, and MS word), software validation, and R shiny.\n\nI have contributed the most to bbr, pmforest, mpn.scorecard, and mrgda, though I have also been closely involved with the development of nmrec.\nEach of these packages bundled together facilitate model development and submission, and are outlined in Metrum’s Expo. See our poster.\n\nDesigned and personalized R shiny apps for internal tool development and external client needs, usually relating to PKPD simulation.\nDeveloped a shiny app to contain re-usable shiny modules, with the intention of creating more portable shiny code to be used in multiple client projects.\nDeveloped a complex shiny app to sort through and filter a database with interactive visualizations, statistical summaries, and parameterized report generation. See poster.\nWorked on client projects within the scope of data assembly, EDA tables and figures, PK simulation, data visualization and report generation.\nHelped validate and write tests for our cloud computing platform, Metworx.\n\n\n\n\n\nCompound Screening Dashboard, which links to other apps I worked on.\nViral Kinetics Model\nI helped develop the other apps on Certara’s website using the flexdashboard R package as well, though I wouldn’t count this as typical R shiny experience given the R package’s simplicity and lack of available UI customization (It’s basically an Rmarkdown document).",
+    "crumbs": [
+      "Home",
+      "Software Development"
+    ]
+  },
+  {
+    "objectID": "software.html#ongoing-projects",
+    "href": "software.html#ongoing-projects",
+    "title": "Software Development",
+    "section": "Ongoing Projects",
+    "text": "Ongoing Projects\nThe following repositories illustrate some of my more recent personal coding projects:\n\nagentbuilder\n\n\nagentbuilder: agentbuilder is an R package for building declarative AI agents that integrate seamlessly with R workflows. Define agents in YAML, compose them with tools, and deploy them anywhere R runs. Built on ellmer for LLM abstraction and ragnar for retrieval.\n\nKey Features:\n\nProvider Flexibility — Seamlessly switch between OpenAI, Anthropic, Ollama (local models), or any LLM provider without changing agent logic.\nTool Integration — Wrap any R function as a tool, create RAG tools for semantic document search, or wrap entire agents as tools for multi-agent orchestration.\nMCP Server Support — Integrate Model Context Protocol servers as tool sources, enabling agents to call external services through a standardized interface.\nStructured Output — Define JSON schemas so agents return typed, structured responses ready for downstream data pipelines.\nConversation Telemetry — Inspect token usage, cost, tool calls, and full conversation transcripts via get_thread().\n\n\n\npy_agentbuilder\n\npy_agentbuilder: py_agentbuilder is a Python package for building provider-agnostic AI agents. Compose local functions, RAG, and MCP tools, persist configs in YAML, and inspect runtime telemetry — all from one API.\n\nKey Features:\n\nProvider Flexibility — Switch between OpenAI, Anthropic, Ollama, or any LiteLLM-supported provider with a single parameter change.\nTool Integration — Wrap any Python function as a tool, build RAG tools backed by DuckDB + LiteLLM embeddings, or use agents-as-tools for multi-agent delegation.\nAgent Flows — Define sequential or parallel pathways of agent calls (flows), and add entire flows as a tool to an existing agent for complex orchestration patterns.\nMCP Server Support — Wrap FastMCP servers as tool sources; at build time the framework auto-discovers server instructions and tool schemas to inject into the system prompt.\nStructured Output — Provide JSON schemas for typed agent responses suitable for classification, extraction, and data pipelines.\nCancellation & Timeouts — Cooperatively cancel long-running calls via CancelToken, or set hard request_timeout bounds.\nThread Persistence — Save, reload, and resume conversations across sessions; seed agents with prior message histories from external storage.\nInteractive Telemetry — View cumulative cost/tokens over time, per-turn tool usage, and Mermaid tool-call flowcharts via plot_thread().\n\n\n\npythonR\n\n\npythonR: pythonR is an R package that facilitates the seamless integration of Python code and functionality within R environments. Leveraging the reticulate package, pythonR aims to simplify the process of developing Python-based functions in R, making it easier to set up, test, and validate Python code directly within the R environment.\n\n\n\nsongClip\n\n\nsongClip: songClip is a prototype R package for running a DJ booth! The core clip_song() function runs an R shiny app. The app will allow you to import an audio library, choose a specific song (any audio file of similar size), modify sound settings (crop it, create loops, adjust equalizer settings, alter playback speed, etc.), and then save out the modified song. The hope was to eventually support layering tracks, similar to a DJ booth, but that is quite a whiles away.",
+    "crumbs": [
+      "Home",
+      "Software Development"
+    ]
+  },
+  {
+    "objectID": "software.html#archived-projects",
+    "href": "software.html#archived-projects",
+    "title": "Software Development",
+    "section": "Archived Projects",
+    "text": "Archived Projects\nNote that the repositories below are from my college days, when I wasn’t nearly as good or organized at coding:). I have additional repositories on my GitHub that feature notably higher code quality, including improved code organization, readability, and conciseness. While most of these are currently set to private, I would be happy to provide access to interested parties on a case-by-case basis.\nI hope to add more personal apps & R packages in the future!\n\n\nAnaerobic DigestionHomebrewingCustom HTML layouts\n\n\n  Full Screen \n\nDescriptionApp Preview \n\n\n\nBackground\nI modeled the anaerobic digestion of hydraulic fracking contaminants for my senior design project (see GitHub). The model contains 40+ PDE’s describing the advanced biological process and reactor properties. An R shiny dashboard app was constructed to facilitate the adjustment model parameters and reactor settings, allowing for quick simulations and sensitivity analyses.\n\n\n\n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  Full Screen \n\nDescriptionApp Preview \n\n\n\nBackground\nHere’s an example of one of the apps I made for personal use back in the day (Homebrewing!). I used to use it to help me keep track of all the ingredients I liked, determine proper measurements, and estimate the pricing. Never actually sold any, but was glad I learned my profit margins wouldn’t be too great.\n\nFeel free to check it out on GitHub!\n\nNote: It looks like some formatting features aren’t working too great on shinyapps.io, and some dropdowns don’t work correctly in the embedded version here. Choosing not to fix it at the moment, though the full screen version should operate a bit more smoothly.\n\n\n\n\n\n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\nI have developed R Shiny applications with more sophisticated user interfaces using HTML and CSS style sheets. These apps are designed to look and feel like traditional web applications rather than typical R Shiny interfaces. While the prototype I’m currently sharing is not fully functional, it demonstrates my ability to create modern and polished user interfaces for R Shiny apps.",
+    "crumbs": [
+      "Home",
+      "Software Development"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Online Portfolio",
@@ -21,36 +61,17 @@
     ]
   },
   {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software Development",
+    "objectID": "script/about_template.html",
+    "href": "script/about_template.html",
+    "title": "Kyle Barrett",
     "section": "",
-    "text": "This section primarily highlights my contributions to published projects that specifically relate to my software development experiences. Most client projects have been confidential, and not all of the software I developed is publicly available (especially R shiny apps).\n\n\n\nI have contributed to many of the packages found at github.com/metrumresearchgroup, relating to NONMEM model management & submission, data visualization, data summarization & formatting (latex, HTML, RTF, and MS word), software validation, and R shiny.\n\nI have contributed the most to bbr, pmforest, mpn.scorecard, and mrgda, though I have also been closely involved with the development of nmrec.\nEach of these packages bundled together facilitate model development and submission, and are outlined in Metrum’s Expo. See our poster.\n\nDesigned and personalized R shiny apps for internal tool development and external client needs, usually relating to PKPD simulation.\nDeveloped a shiny app to contain re-usable shiny modules, with the intention of creating more portable shiny code to be used in multiple client projects.\nDeveloped a complex shiny app to sort through and filter a database with interactive visualizations, statistical summaries, and parameterized report generation. See poster.\nWorked on client projects within the scope of data assembly, EDA tables and figures, PK simulation, data visualization and report generation.\nHelped validate and write tests for our cloud computing platform, Metworx.\n\n\n\n\n\nCompound Screening Dashboard, which links to other apps I worked on.\nViral Kinetics Model\nI helped develop the other apps on Certara’s website using the flexdashboard R package as well, though I wouldn’t count this as typical R shiny experience given the R package’s simplicity and lack of available UI customization (It’s basically an Rmarkdown document).",
-    "crumbs": [
-      "Home",
-      "Software Development"
-    ]
+    "text": "{{app_name}}\n  Full Screen \n\nDescriptionApp Preview \n\n\n{{app_description}}"
   },
   {
-    "objectID": "software.html#ongoing-projects",
-    "href": "software.html#ongoing-projects",
-    "title": "Software Development",
-    "section": "Ongoing Projects",
-    "text": "Ongoing Projects\nThe following repositories illustrate some of my more recent personal coding projects:\n\npythonR\n\n\npythonR: pythonR is an R package that facilitates the seamless integration of Python code and functionality within R environments. Leveraging the reticulate package, pythonR aims to simplify the process of developing Python-based functions in R, making it easier to set up, test, and validate Python code directly within the R environment.\n\n\n\nsongClip\n\n\nsongClip: songClip is a prototype R package for running a DJ booth! The core clip_song() function runs an R shiny app. The app will allow you to import an audio library, choose a specific song (any audio file of similar size), modify sound settings (crop it, create loops, adjust equalizer settings, alter playback speed, etc.), and then save out the modified song. The hope was to eventually support layering tracks, similar to a DJ booth, but that is quite a whiles away.",
-    "crumbs": [
-      "Home",
-      "Software Development"
-    ]
-  },
-  {
-    "objectID": "software.html#archived-projects",
-    "href": "software.html#archived-projects",
-    "title": "Software Development",
-    "section": "Archived Projects",
-    "text": "Archived Projects\nNote that the repositories below are from my college days, when I wasn’t nearly as good or organized at coding:). I have additional repositories on my GitHub that feature notably higher code quality, including improved code organization, readability, and conciseness. While most of these are currently set to private, I would be happy to provide access to interested parties on a case-by-case basis.\nI hope to add more personal apps & R packages in the future!\n\n\nAnaerobic DigestionHomebrewingCustom HTML layouts\n\n\n  Full Screen \n\nDescriptionApp Preview \n\n\n\nBackground\nI modeled the anaerobic digestion of hydraulic fracking contaminants for my senior design project (see GitHub). The model contains 40+ PDE’s describing the advanced biological process and reactor properties. An R shiny dashboard app was constructed to facilitate the adjustment model parameters and reactor settings, allowing for quick simulations and sensitivity analyses.\n\n\n\n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\n\n\n  Full Screen \n\nDescriptionApp Preview \n\n\n\nBackground\nHere’s an example of one of the apps I made for personal use back in the day (Homebrewing!). I used to use it to help me keep track of all the ingredients I liked, determine proper measurements, and estimate the pricing. Never actually sold any, but was glad I learned my profit margins wouldn’t be too great.\n\nFeel free to check it out on GitHub!\n\nNote: It looks like some formatting features aren’t working too great on shinyapps.io, and some dropdowns don’t work correctly in the embedded version here. Choosing not to fix it at the moment, though the full screen version should operate a bit more smoothly.\n\n\n\n\n\n\n\n\n\n  \n  \n\n\n\n\n\n\n\n\nI have developed R Shiny applications with more sophisticated user interfaces using HTML and CSS style sheets. These apps are designed to look and feel like traditional web applications rather than typical R Shiny interfaces. While the prototype I’m currently sharing is not fully functional, it demonstrates my ability to create modern and polished user interfaces for R Shiny apps.",
-    "crumbs": [
-      "Home",
-      "Software Development"
-    ]
+    "objectID": "shiny_apps/anaerobic-digestion/about.html",
+    "href": "shiny_apps/anaerobic-digestion/about.html",
+    "title": "Kyle Barrett",
+    "section": "",
+    "text": "Background\nI modeled the anaerobic digestion of hydraulic fracking contaminants for my senior design project (see GitHub). The model contains 40+ PDE’s describing the advanced biological process and reactor properties. An R shiny dashboard app was constructed to facilitate the adjustment model parameters and reactor settings, allowing for quick simulations and sensitivity analyses."
   }
 ]
